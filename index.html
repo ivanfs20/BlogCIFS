@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="" href="">
+        <link rel="stylesheet" href="">
+        <style>
+            .container {
+                display: flex;
+                justify-content: center; /* Centra horizontalmente */
+                align-items: center; /* Centra verticalmente */
+                width: 100%;
+                height: 70vh; /* Esto es solo para hacerlo visible en la ventana, puedes ajustarlo según tus necesidades */
+            }
+            .img {
+                max-width: 50%; /* Ajusta el tamaño máximo de la imagen */
+                max-height: 50%; /* Ajusta el tamaño máximo de la imagen */
+            }
+            img:hover{
+                scale: 1.5;
+            }
+            h1{
+                text-align: center;
+                font-size: 60px;
+                font-family: monospace;
+                color: white;
+                background-color: black;
+                animation: 2s title infinite;
+            }
+            @keyframes title{
+                0%{transform: scale(1);}
+                50%{transform: scale(1.2);}
+                100%{transform: scale(1);}
+            }
+            body{
+                margin: 0%;
+                padding: 0%;
+            }
+        </style>
+    </head>
+    <body style="height: 10cm;">
+        <div>
+            <h1>ELIGE UNO</h1>
+        </div>
+        <div style="display: flex; flex-wrap:wrap; width:100%">
+            <!-- Musiquita -->
+            <div style="width: 33%; display:flex;justify-content:center">
+                <div class="container">
+                    <img onclick="window.open('Music.html','_self')" src="./img/Musiquita.png" alt="" class="img">
+                </div>
+            </div>
+            <!-- Cuentitos -->
+            <div style="width: 33%; display:flex;justify-content:center">
+                <div class="container">
+                    <img onclick="window.open('Cuentitos.html','_self')" src="./img/Cuentitos.png" alt="" class="img">
+                </div>
+            </div>
+            <!-- Momentitos -->
+            <div style="width: 33%; display:flex;justify-content:center">
+                <div class="container">
+                    <img onclick="window.open('Momentitos.html','_self')" src="./img/Momentitos.png" alt="" class="img">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

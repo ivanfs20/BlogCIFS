@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            MUSIQUITA
+        </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="">
+        <link rel="icon" href="./img/Musiquita.png">
+        <style>
+            html,body{
+                margin: 2%;
+                max-height: 100%;
+
+            }
+            .div{
+                width: 10%;
+                height: 10%;
+            }
+            img{
+                width: 100%;
+                height:100%;
+                border-radius:20px;
+            }
+
+            @keyframes imgs{
+                0%{transform: scale(1);}
+                50%{transform: scale(1.5);}
+                100%{transform: scale(1);}
+            }
+            img:hover{
+                animation: 2s imgs infinite;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="padding: 0%; margin:0%;">
+            <div style="display: flex;flex-wrap:wrap; overflow:visible; padding:2%">
+                <!--1  -->
+                <div class="div" onclick="reproducirAudio('audio1')"><img src="./img/morat/1.jpg" alt=""></div>
+                <!--2  -->
+                <div class="div" onclick="reproducirAudio('audio2')"><img src="./img/morat/2.jpg" alt=""></div>
+                <!--3  -->
+                <div class="div" onclick="reproducirAudio('audio3')"><img src="./img/morat/3.jpg" alt=""></div>
+                <!--4  -->
+                <div class="div" onclick="reproducirAudio('audio4')"><img src="./img/morat/4.jpg" alt=""></div>
+                <!--5  -->
+                <div class="div" onclick="reproducirAudio('audio5')"><img src="./img/morat/5.jpg" alt=""></div>
+                <!--6  -->
+                <div class="div" onclick="reproducirAudio('audio6')"><img src="./img/morat/6.jpg" alt=""></div>
+                <!--7  -->
+                <div class="div" onclick="reproducirAudio('audio7')"><img src="./img/morat/7.jpg" alt=""></div>
+                <!--8  -->
+                <div class="div" onclick="reproducirAudio('audio8')"><img src="./img/morat/8.jpg" alt=""></div>
+                <!--9  -->
+                <div class="div" onclick="reproducirAudio('audio9')"><img src="./img/morat/9.jpg" alt=""></div>
+                <!--10  -->
+                <div class="div" onclick="reproducirAudio('audio10')"><img src="./img/morat/10.jpg" alt=""></div>     
+            </div>
+            <div style="display: flex;flex-wrap:wrap; overflow:visible;  padding:2%">
+                <div class="div" onclick="reproducirAudio('audio11')"><img src="./img/hombres G/11.jpg" alt=""></div>
+                <div class="div" onclick="reproducirAudio('audio12')"><img src="./img/hombres G/12.jpg" alt=""></div>
+                <div class="div" onclick="reproducirAudio('audio13')"><img src="./img/hombres G/13.jpg" alt=""></div>
+                <div class="div" onclick="reproducirAudio('audio14')"><img src="./img/hombres G/14.jpg" alt=""></div>
+                <div class="div" onclick="reproducirAudio('audio15')"><img src="./img/hombres G/15.jpg" alt=""></div>
+                <div class="div" onclick="reproducirAudio('audio16')"><img src="./img/hombres G/16.jpg" alt=""></div>
+                <div class="div" onclick="reproducirAudio('audio17')"><img src="./img/hombres G/17.jpg" alt=""></div>
+                <div class="div" onclick="reproducirAudio('audio18')"><img src="./img/hombres G/18.jpg" alt=""></div>
+                <div class="div" onclick="reproducirAudio('audio19')"><img src="./img/hombres G/19.jpg" alt=""></div>
+                <div class="div" onclick="reproducirAudio('audio20')"><img src="./img/hombres G/20.jpg" alt=""></div>
+            </div>
+            <div style="display: flex;flex-wrap:wrap; overflow:visible;  padding:2%">
+                <div class="div" onclick="reproducirAudio('audio21')"><img src="./img/rio roma/21.jpg" alt=""></div>
+                <div class="div" onclick="reproducirAudio('audio22')"><img src="./img/rio roma/22.jpg" alt=""></div>
+                <div class="div" onclick="reproducirAudio('audio23')"><img src="./img/reik/23.jpg" alt=""></div>
+                <div class="div" onclick="reproducirAudio('audio24')"><img src="./img/reik/24.jpg" alt=""></div>
+                <div class="div" onclick="reproducirAudio('audio25')"><img src="./img/melendi/25.jpg" alt=""></div>
+                <div class="div" onclick="reproducirAudio('audio26')"><img src="./img/arctic monkeys/26.jpg" alt=""></div>
+                <div class="div" onclick="reproducirAudio('audio27')"><img src="./img/matisse/27.jpg" alt=""></div>
+                <div class="div" onclick="reproducirAudio('audio28')"><img src="./img/matisse/28.jpg" alt=""></div>
+                <div class="div" onclick="reproducirAudio('audio29')"><img src="./img/siddhartha/29.jpg" alt=""></div>
+                <div class="div" onclick="reproducirAudio('audio30')"><img src="./img/maneskin/30.jpg" alt=""></div>
+            </div>
+            <audio id="audio1" src="./audio/morat/1.mp3" preload="auto"></audio>
+            <audio id="audio2" src="./audio/morat/2.mp3" preload="auto"></audio>
+            <audio id="audio3" src="./audio/morat/3.mp3" preload="auto"></audio>
+            <audio id="audio4" src="./audio/morat/4.mp3" preload="auto"></audio>
+            <audio id="audio5" src="./audio/morat/5.mp3" preload="auto"></audio>
+            <audio id="audio6" src="./audio/morat/6.mp3" preload="auto"></audio>
+            <audio id="audio7" src="./audio/morat/7.mp3" preload="auto"></audio>
+            <audio id="audio8" src="./audio/morat/8.mp3" preload="auto"></audio>
+            <audio id="audio9" src="./audio/morat/9.mp3" preload="auto"></audio>
+            <audio id="audio10" src="./audio/morat/10.mp3" preload="auto"></audio>
+            <audio id="audio11" src="./audio/hombres G/11.mp3" preload="auto"></audio>
+            <audio id="audio12" src="./audio/hombres G/12.mp3" preload="auto"></audio>
+            <audio id="audio13" src="./audio/hombres G/13.mp3" preload="auto"></audio>
+            <audio id="audio14" src="./audio/hombres G/14.mp3" preload="auto"></audio>
+            <audio id="audio15" src="./audio/hombres G/15.mp3" preload="auto"></audio>
+            <audio id="audio16" src="./audio/hombres G/16.mp3" preload="auto"></audio>
+            <audio id="audio17" src="./audio/hombres G/17.mp3" preload="auto"></audio>
+            <audio id="audio18" src="./audio/hombres G/18.mp3" preload="auto"></audio>
+            <audio id="audio19" src="./audio/hombres G/19.mp3" preload="auto"></audio>
+            <audio id="audio20" src="./audio/hombres G/20.mp3" preload="auto"></audio>
+            <audio id="audio21" src="./audio/rio roma/21.mp3" preload="auto"></audio>
+            <audio id="audio22" src="./audio/rio roma/22.mp3" preload="auto"></audio>
+            <audio id="audio23" src="./audio/reik/23.mp3" preload="auto"></audio>
+            <audio id="audio24" src="./audio/reik/24.mp3" preload="auto"></audio>
+            <audio id="audio25" src="./audio/melendi/25.mp3" preload="auto"></audio>
+            <audio id="audio26" src="./audio/arctic monkeys/26.mp3" preload="auto"></audio>
+            <audio id="audio27" src="./audio/matisse/27.mp3" preload="auto"></audio>
+            <audio id="audio28" src="./audio/matisse/28.mp3" preload="auto"></audio>
+            <audio id="audio29" src="./audio/siddhartha/29.mp3" preload="auto"></audio>
+            <audio id="audio30" src="./audio/maneskin/30.mp3" preload="auto"></audio>
+        </div>
+        <script>
+            var audioActivo = null;
+        
+            function reproducirAudio(id) {
+              var audio = document.getElementById(id);
+        
+              // Si hay un audio activo y no es el mismo que el actual, detenerlo
+              if (audioActivo && audioActivo !== audio) {
+                audioActivo.pause();
+              }
+        
+              // Reproducir el audio seleccionado
+              if (audio.paused) {
+                audio.play();
+              } else {
+                audio.pause();
+              }
+        
+              // Actualizar el audio activo
+              audioActivo = audio;
+            }
+            
+          </script>
+    </body>
+</html>
